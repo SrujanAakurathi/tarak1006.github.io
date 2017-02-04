@@ -1,0 +1,28 @@
+#ktj_text{
+  position: relative;
+  display:none;
+  margin:0 20% 0 20%;
+  text-align:center;
+  top:0px;
+  
+}
+
+
+#ktj_text p{
+  font-family:verdana;
+  display:inline-block;
+  margin: 0;
+    padding: 0;
+}
+#kshitij{
+  font-size:7em;
+  color:rgb(254, 0, 0 );
+  -webkit-transition: all 0.7s ease;
+    transition: all 0.7s ease;
+}
+#kshitij:hover{
+    text-shadow: 0px 0 15px gold;
+cursor: pointer;
+}
+
+#image{ height:350px; background:#c00;}​
