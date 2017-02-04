@@ -1,0 +1,267 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="keywords" content="felicity, felicty16, college, fest, threads, pulsation, iiit, iiith, international, institute, information, technology, hyderabad">
+    <meta name="description" content="Felicity is the annual technical and cultural fest of IIIT-H. Includes technical, cultural and literary events, Major nights, talks, workshops and performances. We, at IIIT-H, believe in giving back to the society and use Felicity as a medium to serve this motive and pickup various social initiatives.">
+    <meta property="og:description" content="Felicity is the annual technical and cultural fest of IIIT-H. Includes technical, cultural and literary events, Major nights, talks, workshops and performances. We, at IIIT-H, believe in giving back to the society and use Felicity as a medium to serve this motive and pickup various social initiatives.">
+    <meta property="og:title" content="Gallery · Felicity · IIIT-H">
+    <meta property="og:image" content="images/texture.jpg">
+
+               
+            
+    <title>EKATHRA|GALLERY</title>
+
+    <link rel="icon" href="images/logo.ico">
+    <link rel="stylesheet" type="text/css" href="gal_css/pure-forms-tables-buttons.css">
+    <link rel="stylesheet" type="text/css" href="gal_css/core.css">
+    <link rel="stylesheet" type="text/css" href="gal_css/new.css">
+    <link rel="stylesheet" type="text/css" href="gal_css/felicons.css">
+    <script src="gal_js/slideout.min.js"></script>
+    <script src="gal_js/jquery.min.js"></script>
+    
+    <script type="application/ld+json">
+        {
+      "@context": "http://schema.org",
+      "@type": "MusicEvent",
+      "location": {
+        "@type": "MusicVenue",
+        "name": "IIIT Hyderabad",
+        "address": "Hyderabad"
+      },
+      "name": "Pro Night - Felicity",
+      "description": "Felicity, IIIT Hyderabad presents its headlining act on 29th January Junkyard Groove!!",
+      "url": "https://felicity.iiit.ac.in/nights/junkyard-groove/",
+      "image": "http://www.mixtapelive.in/wp-content/uploads/2013/06/JYG-Image1.jpg",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://in.bookmyshow.com/events/junkyard-groove-and-when-chai-met-toast/ET00052571",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "isAccessibleForFree": "True",
+      "performer": [
+        {
+          "@type": "MusicGroup",
+          "name": "Junkyard Groove",
+          "sameAs": [
+            "http://junkyardgroove.com"
+          ]
+        },
+        {
+          "@type": "Person",
+          "name": "Jason Sturmon"
+        },
+        {
+          "@type": "Person",
+          "name": "Mike Aquino"
+        },
+        {
+          "@type": "Person",
+          "name": "Roger Femali"
+        },
+        {
+          "@type": "Person",
+          "name": "Jay Moynahan Tenor"
+        },
+        {
+          "@type": "Person",
+          "name": "Roberto Agosto"
+        }
+      ],
+      "startDate": "2017-01-29T20:00",
+      "endDate": "2017-01-30T00:00"
+    }
+    </script>
+</head>
+
+<body  style="overflow: hidden;">
+
+
+    
+    <div id="container" class="wrapper">
+     <button id="menu-toggle" class="toggle-button" >☰</button>
+      <div id="panelcontainer">
+
+
+
+
+      <div id="loaderswing">
+          <a href="gallery.html"> <img class="loaderhoverslow" src="images/logo.ico" /></a>
+      </div>
+      <section id="about" class="about">
+            <div class="cell">
+                <div class="cables center accelerate">
+                    <div class="linkholder">
+                        <div class="links">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="workshop.html">Workshops</a></li>
+                            <li><a href="events.html">Events</a></li>
+                            <li><a href="cultural.html">Culturals</a></li>
+                            <li><a href="sponsors.html">Sponsors</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                        </div>
+                    </div>
+                    <div class="panel accelerate content-holder">
+
+<div style="zoom:0.5; height: 100%">
+    <section id="photostack-1" class="photostack">
+    <div id="inner">
+      
+    </div>
+  </section>
+    
+  </div>
+<link rel="stylesheet" type="text/css" href="gal_css/component.css" />
+  <script src="gal_js/modernizr.min.js"></script>
+  <script src="gal_js/classie.js"></script>
+  <script src="gal_js/photostack.js"></script>
+
+  <script>
+    var stack = document.getElementById('photostack-1')
+    var galleryImages = [
+          "20.jpg","2.jpg","19.jpg","18.jpg","17.jpg",
+          "16.jpg","15.jpg","14.jpg","13.jpg","12.jpg","11.jpg","10.jpg","1.jpg"
+      ]
+    var getImage = function(imageName) {
+          var F = document.createElement("figure");
+          var I = document.createElement("img");
+          I.src = 'images/gallery/' + imageName;
+          I.alt = 'gallery thumbnail';
+
+          // I.onload = placeThumb;
+          F.appendChild(I);
+          $("#inner").append(F);
+
+      };
+      for(var i in galleryImages){
+        getImage(galleryImages[i]);
+      }
+     photostack = new Photostack(stack);
+     setTimeout(function(){photostack._resizeHandler();},100);
+     function changePhoto(dir){
+        
+        if(dir==37){
+          if (photostack.current == 0){
+          photostack._showPhoto(photostack.allItemsCount-1);
+          return;}
+          photostack._showPhoto( photostack.current - 1 );
+        }else if(dir==39){
+          if (photostack.current == photostack.allItemsCount-1){
+          photostack._showPhoto(0);
+          return;}
+          photostack._showPhoto( photostack.current + 1 );
+        }
+     }
+     document.addEventListener('keyup', function(e) {
+      changePhoto(e.keyCode);
+     });
+  </script>
+
+            </div>
+        </div>
+    </div>
+</section>
+          <button id="toggle" class="toggle i">
+    <div class="cross">
+        <div class="x"></div>
+        <div class="y"></div>
+    </div>
+</button>
+
+<div style="width: 100%" class="btn-box">
+<table style="margin: 0 auto">
+<tr>
+<td>
+  <button class="toggle-contact fb-btn " onclick="window.open('')">
+    <i class="icon-facebook"></i>
+  </button>
+  </td><td>
+  <button class="toggle-contact youtube-btn" onclick="window.open('')">
+    <i class="icon-youtube"></i>
+  </button>
+  </td><td>
+  <button class="toggle-contact instagram-btn" onclick="window.open('')">
+    <i class="icon-instagram"></i>
+  </button>
+  </td>
+  </tr>
+</table>
+</div>
+</div>
+<div id="menu">
+  <h2>Menu</h2>
+  <ul class="links" style="list-style: none;padding-left: 0px">
+      <li><a onclick="openPage('about')">About US</a></li>
+      <li><a onclick="openPage('events')">Events</a></li>
+      <li><a onclick="openPage('team')">Team</a></li>
+      <li><a onclick="openPage('sponsors')">Sponsors</a></li>
+      <li><a onclick="openPage('contact')">Contact Us</a></li>
+  </ul>
+</div>
+<!-- Scripts -->
+<script type="text/javascript">
+  var slideout = new Slideout({
+        'panel': document.getElementById('panelcontainer'),
+        'menu': document.getElementById('menu'),
+        'padding': 256,
+        'tolerance': 70
+      });
+
+      // Toggle button
+      document.querySelector('.toggle-button').addEventListener('click', function() {
+        slideout.toggle();
+      });
+      document.querySelector('#panelcontainer').addEventListener('click', function() {
+        slideout.close();
+      });
+</script>
+<script src="gal_js/common.js" charset="utf-8"></script>
+<script src="gal_js/ajaxify.js" charset="utf-8"></script>
+<script src="gal_js/navigation.js" charset="utf-8"></script>
+
+<style>
+      .slideout-menu {
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        z-index: 0;
+        width: 256px;
+        overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
+        display: none;
+        background-color: grey;
+        background-image: linear-gradient(145deg, #1D1F20, #404348);
+      }
+
+      .slideout-open,
+      .slideout-open body,
+      .slideout-open .slideout-panel {
+      }
+
+      .slideout-open .slideout-menu {
+        display: block;
+      }
+    </style>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-57607777-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+    </body>
+</html>
+<script>
+    (function() {
+        $('#toggle').removeClass('i');
+        $('.btn-box').css('display', 'none');
+    })();
+</script>

@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	<title>EKATHRA| Registration Form</title>
+	<meta name="author" content="Team Thomso" />
+	<link rel="shortcut icon" href="img/logo.png">
+	<link rel="stylesheet" type="text/css" href="register_css/creative.css" />
+	<!--<link rel="stylesheet" type="text/css" href="main_css/bootstrap.min3.css" />-->
+	<link rel="stylesheet" type="text/css" href="register_css/component.css" />
+	<link rel="stylesheet" href="register_css/bootstrap.min3.css">
+	<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/main_css/font-awesome.min.css">-->
+	<!--<script src="js/modernizr.custom.js"></script>-->
+	<script src="reg_js/jquery.min.js"></script>
+	  <script type="text/javascript" src="reg_js/jquery.alphanum.js"></script>
+	  <script type="text/javascript" src="reg_js/jquery.validate.min.js"></script>
+	  <script type="text/javascript" src="reg_js/registration_form.js"></script>
+          <script src="reg_js/custom-file-input.js"></script>
+				<style>
+					select:invalid { opacity: .8; }
+					</style>
+					
+	  <script>(function(e,t,n){var r=e.querySelectorAll("html")[0];r.className=r.className.replace(/(^|\s)no-js(\s|$)/,"$1js$2")})(document,window,0);</script>
+</head>
+<body style="">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-lg-10 col-lg-offset-1">
+				<h2 class="register">REGISTRATION &nbsp; FORM</h2>				
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-6 col-lg-offset-3 back_div">
+				<form class="form" method="post" action="validate.php" id="registration_form" enctype="multipart/form-data">
+					<label for="name"></label>
+					<input type="text" name="name" class="form-control" id="name" maxlength="50" placeholder="Name">
+					<label for="email"></label>
+					<input type="text" name="email" class="form-control" id="email" maxlength="256" placeholder="Email Address">
+					<label for="pwd"></label>
+					<input type="password" name="pwd" class="form-control" id="pwd" maxlength="50" placeholder="Password">
+					<label for="confpwd"></label>
+					<input type="password" name="confpwd" class="form-control" id="confpwd" maxlength="50" placeholder="Confirm Password">
+					<label for="Gender"></label>
+					<select id="gender" name="gender" class="gender" required>
+						<option value="" style="display: none;color: red;">Choose your gender</option>
+						<option value="Male">Male</option>
+						<option value="Female">Female</option>
+					</select>
+					<label for="college"></label>
+					<input type="text" name="college" class="form-control" id="college" maxlength="80" placeholder="College Name">
+					<label for="age"></label>
+					<input type="text" name="age" class="form-control" id="age" maxlength="2" placeholder="Age">
+					<label for="accomodation"></label>
+					<select id="accomodation" name="accomodation" required>
+					  <option value="" style="display:none" >Need Accomodation?</option>
+					  <option value="yes" >Yes</option>
+					  <option value="No">No</option>
+					</select>
+					<label for="mobile"></label>
+					<input type="text" name="mobile" class="form-control" id="mobile" maxlength="10" placeholder="Mobile Number">
+					<label for="tshirt"></label>
+					<select class="" id="tshirt" name="tshirt"  required>
+						<option value="" style="display:none">Choose a tshirt size</option>
+						<option value="S">S</option>
+						<option value="M">M</option>
+						<option value="L">L</option>
+						<option value="XL">XL</option>
+						<option value="XXL">XXL</option>
+					</select>
+					
+					<span class="choice hidden" id="hide">
+						<label for="event" class="you_want">Do you want to register for another event?</label>
+						<label class="radio-inline"><input type="radio" name="yes" value="positive" class="circle" id="positive"><span style="">Yes</span></label>
+						<label class="radio-inline"><input type="radio" name="yes" value="negative" class="circle" id="negative"><span style="">No</span></label>
+					</span>
+					
+					
+					
+				<center><input type="submit" class="submit" name="submit" value="Submit">
+                                        </center>
+				</form>
+			</div></div>
+		</div>
+</body>
+
+</html>

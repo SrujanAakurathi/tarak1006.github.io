@@ -1,0 +1,396 @@
+
+<!doctype html>
+<html >
+    
+    <head>
+        <title>EKAHTRA</title>
+        <meta name="viewport" content="width=device-width" />
+        <meta property="og:image" content="#" />
+        <link rel="stylesheet" href="work_css/main.css">
+        <link rel="stylesheet" type="text/css" media="screen and (min-device-width: 959px)" href="work_css/animate.css" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+     	<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'/>
+        <script src='work_js/jquery-1.12.2.min.js'></script>
+        <script src="work_js/cookie.js"></script>
+		<style>
+    #start:hover{
+          animation-play-state: paused;
+    }
+
+.blink {
+	-webkit-animation: blink .75s linear infinite;
+	-moz-animation: blink .75s linear infinite;
+	-ms-animation: blink .75s linear infinite;
+	-o-animation: blink .75s linear infinite;
+	 animation: blink .75s linear infinite;
+}
+@-webkit-keyframes blink {
+	0% { opacity: 1; }
+	50% { opacity: 1; }
+	50.01% { opacity: 0; }
+	100% { opacity: 0; }
+}
+@-moz-keyframes blink {
+	0% { opacity: 1; }
+	50% { opacity: 1; }
+	50.01% { opacity: 0; }
+	100% { opacity: 0; }
+}
+@-ms-keyframes blink {
+	0% { opacity: 1; }
+	50% { opacity: 1; }
+	50.01% { opacity: 0; }
+	100% { opacity: 0; }
+}
+@-o-keyframes blink {
+	0% { opacity: 1; }
+	50% { opacity: 1; }
+	50.01% { opacity: 0; }
+	100% { opacity: 0; }
+}
+@keyframes blink {
+	0% { opacity: 1; }
+	50% { opacity: 1; }
+	50.01% { opacity: 0; }
+	100% { opacity: 0; }
+}
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+@media only screen and (min-device-width: 200px) and (max-device-width: 600px){
+div#noticeBtn
+{
+      display: none
+}
+}
+#noticeBtn{
+
+    width: auto;
+    \: 0px;
+    position: fixed;
+    bottom: 50px;
+    height: auto;
+       background-color: #bdd2b7 !important;
+    border-radius: 2px;
+    padding: 6px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 90%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+		        div#triangle-left{
+background-color: #e68b82;
+
+    width: 356px;
+
+    color: #5A5858;
+    position: fixed;
+bottom:10px;
+    font-size: 15px;
+    height:30px;
+        }
+div#triangle-left::before {
+        content: '';
+    width: 0;
+    top: 0px;
+    position: relative;
+    float: left;
+    left: 356px;
+    height: 0;
+        border-top: 15px solid transparent;
+    border-left: 50px solid #e68b82;
+    border-bottom: 15px solid transparent;
+}
+
+		#load{
+          width:100%;
+          height:100%;
+          position:fixed;
+          z-index:9999;
+          
+        }
+		</style>
+		<script>
+
+		document.onreadystatechange = function () {
+          var state = document.readyState;
+          if (state == 'interactive') {
+               document.getElementById('contents').style.visibility="hidden";
+          } else if (state == 'complete') {
+              setTimeout(function(){
+                 document.getElementById('interactive');
+                 document.getElementById('load').style.visibility="hidden";
+                 document.getElementById('contents').style.visibility="visible";
+              });
+          }
+
+// Get the modal
+var modal = document.getElementById('myModal');
+    modal.style.display = "block";
+
+// Get the button that opens the modal
+var btn = document.getElementById("noticeBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// When the user clicks on the button, open the modal 
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+
+    }
+}
+        }
+		</script>
+    </head>
+    <body >
+	   <div id="load"></div>
+	   <div id="contents">
+        <header id="header">
+        	<nav id="nav">
+		        	
+	        		<ul id="navlist">
+<a href="../../" class="techkriti-logo-container">
+                <img style='vertical-align:middle;width:52px;' src="images/logo.ico">
+            </a>
+	        			<li><a href="index.html">Home</a></li>
+	        			<li><a href="events.html">Events</a></li>
+	        			<li><a href="cultural.html">Culturals</a></li>
+                                        <li><a href="gallery.html">Gallery</a></li>
+	        			<li><a href="about.html">About Us</a></li>	        			
+	        		</ul>
+        	</nav>
+                <!-- Trigger/Open The Modal -->
+
+</div>
+        
+        
+        <div  class="container">
+            <div><img src="images/hacking1.jpg"/></div>
+            <div><img src="images/power1.jpg"/></div>
+            <div><img src="images/chem.jpg"/></div>
+            <div><img src="images/circuit2.jpg"/></div>
+    	</div>
+            
+        <div id="slide-button" class="buttons">
+            <a><img class="prev" src="images/left-arrow.png"></a>
+            <a><img class="next" src="images/right-arrow.png"></a>
+        </div>
+        
+        <div class="registers d" id="start" >
+            <div>
+            </div>
+        </div>
+	
+        
+        <main id="skrollr-body">
+            <div id="social" class="social">
+	        	<a target="_blank" href="#"><i class="fa fa-facebook" ></i></a>
+		        <a target="_blank" class="t" href="#" style="background-color:#4099FF"><i class="fa fa-twitter" ></i></a>
+		        <a target="_blank" class="y" href="#" style="background-color:#b31217"><i class="fa fa-youtube-play"></i></a>
+		        <a target="_blank" class="in" href="#" style="background-color:#9b6954"><i class="fa fa-instagram"></i></a>
+		        <a target="_blank" class="li" href="#" style="background-color:#642289"><i class="fa fa-linkedin"></i></a>
+	        </div>
+
+            <section id="about">
+	        	<div class="wrap">
+	        		<h1>WORKSHOPS</h1>
+	        		
+	        		<div class="testimonials__content">
+		        		<div class="testimonials__odd grid">
+			        		<div class="col large-push-9 medium-push-9 span-3 small-push-8 small-4 xsmall-3">
+		        				<img class="fluid" src="images/hacking.jpg" alt="">
+                           
+		        			</div>
+							<div class="col large-push-2 medium-push-2 span-4 small-pull-3 small-7 xsmall-3">
+								<div class="profile">
+									<h2 class="profile__title">ETHICAL HACKING</h2>
+									<div class="profile__content">
+				        				<p>When it comes to cybersecurity, hacking comes in many colors: white, grey, black, and shades in between. 
+White hat hackers use their skills for checking an organization's network is vulnerable to outside attacks.
+If you're interested in becoming an ethical hacker, 
+or want to secure your own network, this is a great start for you.</p>
+                                                                        <a href="ethical_hacking.html">LEARN MORE</a>
+			        				</div>
+			        				<div class="triangle"><div></div></div>
+		        				</div>
+		        			</div>
+		        		</div>
+		        		<div class="testimonials__even grid">
+			        		<div class="col span-3 small-4 xsmall-3">
+		        				<img class="fluid" src="images/power.jpg" alt="">
+                            
+		        			</div>
+                            <div class="col span-4 small-7 xsmall-3">
+								<div class="profile">
+									<h2 class="profile__title">POWER ELECTRONICS</h2>
+									<div class="profile__content">
+				        				<p>Uses switched-mode converter circuits for controlling and converting electrical power with high efficiency.
+Will understand what a switched-mode converter is and its basic operating principles
+And know how to derive an averaged equivalent circuit model and solve for converter efficiency.</p>
+				        				<a href="powerelectronics.html">LEARN MORE</a>
+			        				</div>
+			        				<div class="triangle"><div></div></div>
+		        				</div>
+		        			</div>
+		        		</div>
+		        		<div class="testimonials__odd grid">
+			        		<div class="col large-push-9 medium-push-9 span-3 small-push-8 small-4 xsmall-3">
+		        				<img class="fluid" src="images/circuit.jpg" alt="">
+                            
+		        			</div>
+							<div class="col large-push-2 medium-push-2 span-4 small-pull-3 small-7 xsmall-3">
+								<div class="profile">
+									<h2 class="profile__title">SIMULATRIX/<br>CIRCUTRIX</h2>
+									<div class="profile__content">
+				        				<p>
+Circuitrix helps in bringing out the electronic nerd within you.
+It invovles desingning and implementing different circuits as efficient as possible.
+Simulatrix helps in visualizing the elementary steps in designing and working.</p>
+				        				<a href="circuitrix.html">LEARN MORE</a>
+				        			</div>
+				        			<div class="triangle"><div></div></div>
+		        				</div>
+                                
+		        			</div>
+		        		</div>
+		        		<div class="testimonials__even grid">
+							
+                            <div class="col span-3 small-4 xsmall-3">
+		        				<img class="fluid" src="images/chemical.jpg" alt="">
+                          
+		        			</div>
+                            <div class="col span-4 small-7 xsmall-3">
+								<div class="profile">
+									<h2 class="profile__title">CHEMICAL ENGINEERING SIMULATION SOFTWARES</h2>
+									<div class="profile__content">
+				        				<p>
+Circuitrix helps in bringing out the electronic nerd within you.
+It invovles desingning and implementing different circuits as efficient as possible.
+Simulatrix helps in visualizing the elementary steps in designing and working.</p>
+                                                                        <a href="chemical.html">LEARN MORE</a>
+			        				</div>
+			        				<div class="triangle"><div></div></div>
+		        				</div>
+		        			</div>
+		        		</div>
+	        		</div>
+        		</div>
+        		<div class="hat">
+					<div class="triangle triangle--lg"><div></div></div>
+					<div class="triangle triangle--sm"><div></div></div>
+				</div>
+        		<div data-bottom-top="transform:translateY(30%)" data-top-bottom="transform:translateY(-10%)" class="bit bit--left">
+        			<svg viewBox="0 0 1373 680"><polygon class="a" points="0 0 1373 391 276 680 0 632 0 0"/></svg>
+        		</div>
+        	</section>
+            
+
+        
+            
+            
+        <section class="contact" id="cities">
+                <div class="wrap">
+	        				<h2 class="box divider">CONTACT US</h2>
+	        				<ul class="region region--wrap flow-center">
+	        					<li class="box block no-grow span-3 small-3 xsmall-6">
+                                                                         <img src="images">
+        							<h3>Sitaram chaitanya</h3>
+        							<p class='real'>
+										xyz@gmail.com<br>
+										+91-7878783758<br>
+									</p>
+		        				</li>
+		        				<li class="box block no-grow span-3 small-3 xsmall-6">
+                                     <img src="images">
+        							<h3>Ashok</h3>
+        							<p class='real'>
+										xyz@gmail.com<br>
+										+91-898899898<br>
+									</p>
+		        				</li>
+		        				<li class="box block no-grow span-3 small-3 xsmall-6">
+                                     <img src="images">
+        							<h3>Srujan</h3>
+        							<p class='real'>
+										xyz@gmail.com<br>
+										+91-999999999<br>
+									</p>
+		        				</li>
+                                <li class="box block no-grow span-3 small-3 xsmall-6">
+                                     <img src="images">
+        							<h3>Tarak</h3>
+        							<p class='real'>
+										xyz@gmail.com<br>
+										+91-999999999<br>
+									</p>
+		        				</li>
+		        		
+	        				</ul>
+        		</div>
+
+        		<div class="hat">
+					<div class="triangle triangle--lg"><div></div></div>
+					<div class="triangle triangle--sm"><div></div></div>
+				</div>
+        		<div data-bottom-top="transform:translateY(30%)" data-top-bottom="transform:translateY(-10%)" class="bit bit--left">
+        			<svg viewBox="0 0 1373 680"><polygon class="a" points="0 0 1373 391 276 680 0 632 0 0"/></svg>
+        		</div>
+				<div id="tosc-contact">
+			      <div>
+				  <p>For further details Contact</p>
+				  <hr>
+			       <p>9999999999</p>
+				   <hr>
+				   <p>xyz@gmail.com</p>
+			      </div>
+			    </div>
+        	</section>
+            
+        </main>
+
+    	<footer id="footer" class="social bottom">
+	    	
+    	</footer>
+       
+        <script src="work_js/scriptt.js"></script>
+
+    </body>
+
+</html>
