@@ -1,0 +1,239 @@
+@font-face {
+    font-family: 'questa_granderegular';
+      src: url('../fonts/Lucida.ttf'); /* IE9 Compat Modes */
+    font-style: normal
+}
+@font-face {
+  font-family: 'MyWebFont1';
+  src: url('../fonts/Century-Gothic.ttf'); /* IE9 Compat Modes */
+}
+body{
+	background-image: url('../images/water.jpg'); 
+	background-size: cover; 
+	background-position: center;
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+	min-height: 100vh;
+	line-height: 3.428571 !important;
+	font-family: 'questa_granderegular', sans-serif !important;
+}
+body::-webkit-scrollbar { 
+  /* This is the magic bit */
+  display: none;
+}
+.register{
+	color: white;
+	padding: 30px 0px;
+	font-family: 'MyWebFont1', sans-serif !important;
+	font-size: 40px !important;
+}
+.payment{
+	color: white;
+	padding: 0px 0px 15px 0px;
+	font-family: 'MyWebFont1', sans-serif !important;
+	font-size: 20px !important;
+}
+.proceed{
+	color: #fe951a !important;
+	text-decoration: none;
+	-o-transition:color .2s ease-out;
+  -ms-transition:color .2s ease-out;
+  -moz-transition:color .2s ease-out;
+  -webkit-transition:color .2s ease-out;
+  transition:color .2s ease-out;
+}
+.proceed:hover{
+	color: #fe6d1a !important;
+	text-decoration: none;
+	
+}
+.proceed:visited, .proceed:active, .proceed:focus{
+	color: #fe951a !important;
+	text-decoration: none !important;
+}
+@media (min-width: 768px) {
+.back_div{
+	background-color: black;
+	opacity: 0.8;
+	padding: 100px !important;
+}
+}
+@media (max-width: 768px) {
+.back_div{
+	background-color: black;
+	opacity: 0.8;
+	padding: 50px !important;
+}
+}
+@media (max-width: 480px) {
+.back_div{
+	background-color: black;
+	opacity: 0.8;
+	padding: 25px !important;
+}
+}
+.form-control{
+	border-radius: 0px !important;
+	padding: 20px 10px !important;
+}
+.form select{
+	border-radius: 0;
+	border: none;
+	border-bottom: 1px solid #fff;
+	-webkit-appearance: none;
+    -moz-appearance: none;
+    background-position: right 50% !important;
+    background: url('../img/arrow.png') no-repeat !important;
+    padding:5px 10px !important;
+    cursor:pointer;
+}
+
+.form input,
+.form textarea,
+.form select {
+	font-family: 'questa_granderegular', sans-serif;
+	line-height: 1.2;
+	font-size: 20px;
+	color: #fff;
+	padding: 5px 10px;
+	display: block;
+	width: 100%;
+	background: transparent;
+}
+.form input,
+.form textarea{
+	font-family: 'questa_granderegular', sans-serif;
+	line-height: 1.2;
+	font-size: 20px !important;
+	color: #fff;
+	padding: 5px 10px;
+	display: block;
+	width: 100%;
+	background: transparent;
+}
+.gender{
+
+}
+.form input,
+.form textarea {
+	border: none;
+	border-bottom: 1px solid #fff;
+}
+
+.form textarea {
+	min-height: 200px;
+}
+.form-control:focus{
+	box-shadow: none !important;
+	webkit-box-shadow: none !important;
+	border: none;
+	border-bottom: 1px solid white;
+	border-color: transparent !important;
+	border-left-color: transparent !important;
+	border-right-color: transparent !important;
+	border-top-color: transparent !important;
+}
+.aubmit:focus{
+	box-shadow: none !important;
+	webkit-box-shadow: none !important;
+	
+}
+.form input:focus,
+.form textarea:focus,
+.form label:active + input,
+.form label:active + textarea {
+	outline: 0px !important;
+	border: none;
+	border-bottom: 1px solid white !important;
+}
+
+.form select:focus {
+	outline: 0px !important;
+}
+.form select option{
+	color:#7a7a52;
+}
+
+::-webkit-input-placeholder { /* WebKit browsers */
+    color: white !important;
+    opacity:.8;
+    font-size:20px;
+}
+
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: white !important;
+    opacity:.8;
+    font-size:20px;
+}
+
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: white !important;
+    opacity:.8;
+    font-size:20px;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color: white !important;
+    opacity:.8;
+    font-size:20px;
+}
+
+.submit-wrap {
+	text-align: center;
+	padding-top: 40px;
+	clear: both;
+}
+input.submit {
+	background: transparent;
+	border: 1px solid white !important;
+	color: #fff;
+	width: auto;
+	cursor: pointer;
+	text-transform: uppercase;
+	display: inline-block;
+	padding: 10px 30px;
+	font-size: 1.2em;
+	border-radius: 30px;
+	letter-spacing: 1px;
+	margin-top: 4.6vh;
+	
+}
+input.submit:hover {
+	background: white;
+	color: #1A1A1A;
+	opacity: 1;
+}
+
+.radio-inline{
+	width: 40%;
+	padding-top: 2px !important;
+	color: white;
+	line-height:0.12;
+	margin-bottom: 0vh !important;
+}
+.radio-inline > span{
+}
+.circle{
+	width:10% !important;
+}
+.hidden{
+	display: none !important;
+}
+
+.you_want{
+	color: white;
+	font-size: 14px;
+	margin-top: 7vh;
+		line-height:0.12;
+		margin-bottom: 2vh;
+}
+.circle {
+    width: 10% !important;
+    display: inline !important;
+	position: initial !important;
+}
+body
+{
+font-size : 12px !important;
+color :	#fe951a !important;
+}
