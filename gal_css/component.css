@@ -1,0 +1,57 @@
+.photostack {
+  height: 100%;
+  position: relative;
+  overflow: hidden; }
+
+/* Wrapper and figures */
+/* The size of this wrapper can be smaller if the items should not be scattered across the whole container */
+.photostack > div {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto; }
+
+.photostack figure {
+  background-color: white;
+  box-shadow: 0 1px 10px 0 black;
+  position: relative;
+  padding: 40px;
+  text-align: center; }
+
+.photostack figure {
+  position: absolute;
+  display: block; }
+
+/* Navigation dots */
+.photostack nav {
+  position: absolute;
+  box-shadow: 0 1px 10px 0 black;
+  background-color: rgba(28, 28, 28, 0.5);
+  width: 100%;
+  bottom: 0px;
+  z-index: 101;
+  text-align: center; }
+
+.photostack nav span {
+  display: inline-block;
+  margin: 0 5px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  background: #aaa;
+  border-radius: 50%;
+  -webkit-transition: -webkit-transform 0.6s ease-in-out, background 0.3s;
+          transition: transform 0.6s ease-in-out, background 0.3s;
+  -webkit-transform: scale(0.48);
+          transform: scale(0.48); }
+
+.photostack-transition figure {
+  -webkit-transition: -webkit-transform 0.6s ease-in-out;
+          transition: transform 0.6s ease-in-out; }
+
+.photostack-current {
+  z-index: 100; }
+
+nav span.current {
+  background: red;
+  -webkit-transform: scale(0.61);
+  transform: scale(0.61); }
