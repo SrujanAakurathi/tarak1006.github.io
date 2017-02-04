@@ -1,0 +1,45 @@
+
+.trending
+{
+	background-color:white;
+}
+.trending12
+{
+	background-color:#1A1A1A;
+		padding: 20px;
+	font-size: 46px;
+	font-weight: 600;
+}
+@media (min-width: 768px) {
+.include
+{
+height:100vh;
+}
+}
+@media (max-width: 768px) {
+.include
+{
+height:auto;
+
+}
+}
+.row
+{
+margin:0px;
+}
+.carouselGallery-wrapper > div
+{
+	
+}
+#page-top > div.carouselGallery-wrapper > div > div > div > div:nth-child(2) > div.col-lg-7.event_description > center > p:nth-child(1)
+{
+	
+}
+@media (min-width: 768px){
+.extra_margin{
+	margin-top: 2vh !important;
+}
+.extra_yash_1{
+	margin-top: 2vh;
+}
+}
