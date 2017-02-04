@@ -1,74 +1,1101 @@
-<html class=" js no-touch cssanimations csstransitions"><head>
-<meta charset="utf-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="description" content="Tathva Login">
-      <meta name="author" content="Tathva Team">
-      <meta name="keywords" content="tathva">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-      <link rel="shortcut icon" href="images/logo.ico" type="image/x-icon">
-    <link rel="icon" href="images/logo.ico" type="image/x-icon">
-    <title>EKATHRA|Events</title>
-<script src="js/jquery.js"></script>
-    <link rel="stylesheet" type="text/css" href="event_css/theme.css">
-    <link rel="stylesheet" type="text/css" href="event_css/component.css">
-    <link rel="stylesheet" type="text/css" href="event_css/animations.css">
-    <link rel="stylesheet" type="text/css" href="event_css/loadingTathva.css">
-    <link rel="stylesheet" type="text/css" href="event_css/jquery.fullPage.css">
-    <link rel="stylesheet" type="text/css" href="event_css/hover.css">
-    <script src="event_js/modernizr.custom.js"></script>
-    <script src="event_js/jquery.fullPage.js"></script>
-    <script src="event_js/intense.js"></script>
-    <script src="event_js/jquery.dateFormat.js"></script>
-  </head>
-  <body>
-<input type="hidden" id="TathvaId" value="">
-    <div id="pt-main" class="pt-perspective">
-      <div class="pt-page pt-page-1 pt-page-current">
-        <div id="total_container" style="margin-left: 61.47px; margin-top: 65.28px;">
-          <div id="heading">EVENTS</div>
-          <div id="row1">
-              <div class="bigTile" style="width:327.84px;height:327.84px">
-                  <div id="tile14" class="smallTile smallTile1"  style="background-color: rgb(244, 67, 54); height: 98%; width: 98%; background-position-y: 93.9285%;"><div class="smallTileContents" id="tile8contents">
-                          <div class="eventName">
-                              <a href="index.html">Computer Science</a>
-                          </div>
-                      </div>
-                      <a href='index.html'>
-                          <img class="clipart" style=" margin-top: 35%" height="30%" width="30%" src="images/">
-                      </a>
-                  </div>
-              </div>
-              <div class="bigTile" style="width:327.84px;height:327.84px">
-                  <div id="tile13" class="smallTile smallTile3"  style="background-color: rgb(33, 150, 243); height: 48%; width: 48%; background-position-y: 93.9285%;"><div class="smallTileContents" id="tile11contents"><div class="eventName">Electrical</div></div><img class="clipart" style=" margin-top: 20%" height="60%" width="60%" src="images/bulb.png"></div><div id="tile12" class="smallTile smallTile3" onclick="loadEvents(&quot;CIVIL&quot;)" style="background-color: rgb(255, 193, 7); height: 48%; width: 48%; background-position-y: 93.9285%;"><div class="smallTileContents" id="tile2contents"><div class="eventName">Civil</div></div><img class="clipart" style=" margin-top: 20%" height="60%" width="60%" src="images/bulb.png"></div><div id="tile11" class="smallTile smallTile3" onclick="loadEvents(&quot;PHY&quot;)" style="background-color: rgb(103, 58, 183); height: 48%; width: 48%; background-position-y: 93.9285%;"><div class="smallTileContents" id="tile8contents"><div class="eventName">Mechanical</div></div><img class="clipart" style=" margin-top: 20%" height="60%" width="60%" src="images/bulb.png"></div><div id="tile10" class="smallTile smallTile3" onclick="loadEvents(&quot;CSE&quot;)" style="background-color: rgb(76, 175, 80); height: 48%; width: 48%; background-position-y: 93.9285%;"><div class="smallTileContents" id="tile2contents"><div class="eventName">Dance,Arts<br>&Theaters</div></div><img class="clipart" style=" margin-top: 20%" height="60%" width="60%" src="images/bulb.png"></div></div><div class="bigTile" style="width:327.84px;height:327.84px"><div id="tile9" class="smallTile smallTile3" onclick="loadEvents(&quot;ECE&quot;)" style="background-color: rgb(121, 85, 72); height: 48%; width: 48%; background-position-y: 93.9285%;"><div class="smallTileContents" id="tile2contents"><div class="eventName">Electronics</div></div><img class="clipart" style=" margin-top: 20%" height="60%" width="60%" src="images/bulb.png"></div><div id="tile8" class="smallTile smallTile3" onclick="loadEvents(&quot;CHEM&quot;)" style="background-color: rgb(103, 58, 183); width: 48%; height: 48%; background-position-y: 93.9285%;"><div class="smallTileContents" id="tile1contents"><div class="eventName">Chemistry</div></div><img class="clipart" style=" margin-top: 20%" height="60%" width="60%" src="images/c1.jpg"></div><div id="tile7" class="smallTile smallTile3" onclick="loadEvents(&quot;GEN&quot;)" animdelay="6000" style="background-image: url('images/bulb.png'); width: 48%; height: 48%; background-position-y: 50%;"><div class="smallTileContents" id="tile2contents"><div class="eventName">Music & <br> Other Attractions</div></div></div><div id="tile6" class="smallTile smallTile3" onclick="loadEvents(&quot;QUIZ&quot;)" style="background-color: rgb(255, 87, 34); height: 48%; width: 48%; background-position-y: 93.9285%;"><div class="smallTileContents" id="tile4contents"><div class="eventName">Quizzing</div></div><img class="clipart" style=" margin-top: 20%" height="60%" width="60%" src="images/bulb.png"></div></div></div>
-          <div id="row2"><div class="bigTile" style="width:327.84px;height:163.92px"><div id="tile5" class="smallTile smallTile4"  animdelay="41000" style="background-image: url('images/bulb.png'); height: 98%; width: 48%; background-position-y: 50%;"><div class="smallTileContents" id="tile0contents"><div class="eventName">Common Events</div></div></div><div id="tile4" class="smallTile smallTile4"  style="background-color: rgb(121, 85, 72); width: 48%; height: 98%; background-position-y: 93.9285%;"><div class="smallTileContents" id="tile2contents"><div class="eventName">Online Events</div></div><img class="clipart" style=" margin-top: 20%" height="60%" width="60%" src="images/bulb.png"></div></div><div class="bigTile" style="width:327.84px;height:163.92px"><div id="tile3" class="smallTile smallTile1" onclick="loadEvents(&quot;MECH&quot;)" style="background-color: rgb(103, 58, 183); height: 98%; width: 98%; background-position-y: 93.9285%;"><div class="smallTileContents" id="tile1contents"><div class="eventName">Individual Fun</div></div><img class="clipart" style=" margin-top: 10%" height="60%" width="30%" src="images/bulb.png"></div></div><div class="bigTile" style="width:327.84px;height:163.92px"><div id="tile2" class="smallTile smallTile4" onclick="loadEvents(&quot;EEE&quot;)" style="background-color: rgb(244, 67, 54); width: 48%; height: 98%; background-position-y: 93.9285%;"><div class="smallTileContents" id="tile0contents"><div class="eventName">Group Fun</div></div><img class="clipart" style=" margin-top: 20%" height="60%" width="60%" src="images/bulb.png"></div>
-        </div>
-      </div>
-      <div class="pt-page pt-page-2">
-        <div id="fullpage">
-        </div>
-        <div id="cardsContainer">
-        </div>
-      </div>
-    </div>
-<div id="top_bar">
-        <a class="top_el" href="index.html">Home</a>
-        <a class="top_el" href="workshop.html">Workshops</a>
-        <a class="top_el" href="cultural.html">Culturals</a>
-        <a class="top_el" href="gallery.html">Gallery</a>
-        <a class="top_el" href="sponsors.html">Sponsors</a>
-   	<a class="top_el" href="about.html">About Us</a>
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Events | Incident 2017</title>
+	<meta name="description" content="Incident 2017 sets the platform for a variety of events and competions. Here's a list of all events and competitons that Incident boasts of."/>
+		
+                <meta name="viewport" content="width=device-width, user-scalable=yes">
+	<meta charset="utf-8"/>
+	
+	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="cultural_css/loader.min.css">
+	<link rel="stylesheet" type="text/css" href="cultural_css/menu.min.css">
+	<script type="text/javascript" src="cultural_js/jquery-2.1.1.min.js"></script>
+	<script src="cultural_js/loader.min.js"></script>
+	<script src="cultural_js/menu.min.js"></script>
+	<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-88839712-1', 'auto');
+  ga('send', 'pageview');
+
+</script>	<link rel="stylesheet" type="text/css" href="cultural_css/events.min.css">
+	<link rel="stylesheet" type="text/css" href="cultural_css/events.media.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+        <link rel="stylesheet"	href="header_css/myhead.css" type="text/css" media="all">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
+	<script src="cultural_js/events.min.js"></script>
+	<script type="application/ld+json">
+	[
+		{
+          "@context": "http://schema.org/",
+          "@type": "Organization",
+          "@id": "Incident",
+          "name": "Incident",
+          "logo": "http://incident.co.in/images/Logo.png",
+          "description": "Incident is the annual cultural festival of NITK, Surathkal and is one of the  biggest of its kind in India. This 4 day festival occurs in either February or March and  attracts a footfall of more than 40,000 every year and consisting of over 60 events.",
+          "url": "http://incident.co.in",
+          "address": "NITK Surathkal, Karnataka"
+        },
+        {	
+        	"@context": "http://schema.org/",
+        	"@id": "NITK",
+        	"@type": "Place",
+            "name": "NITK Surathkal",
+            "address": "NITK Surathkal, Srinivas Nagar, Karnataka - 575025"
+        },
+        {
+        	 "@context": "http://schema.org/",
+        	 "@type": "Event",
+        	 "name": "Dance",
+        	 "location": {
+        	 	"@id": "NITK"
+        	 },
+        	 "startDate": "2017-03-04",
+        	 "organizer": {
+        	 	"@id": "Incident"
+        	 }
+        },
+        {
+        	 "@context": "http://schema.org/",
+        	 "@type": "Event",
+        	 "name": "Musical",
+        	 "location": {
+        	 	"@id": "NITK"
+        	 },
+        	 "startDate": "2017-03-02",
+        	 "organizer": {
+        	 	"@id": "Incident"
+        	 }
+        },
+        {
+        	 "@context": "http://schema.org/",
+        	 "@type": "Event",
+        	 "name": "Slam Dunk",
+        	 "location": {
+        	 	"@id": "NITK"
+        	 },
+        	 "startDate": "2017-03-01",
+        	 "endDate": "2017-03-05",
+        	 "organizer": {
+        	 	"@id": "Incident"
+        	 }
+        },
+        {
+        	 "@context": "http://schema.org/",
+        	 "@type": "Event",
+        	 "name": "Haute Couture",
+        	 "location": {
+        	 	"@id": "NITK"
+        	 },
+        	 "startDate": "2017-03-03",
+        	 "organizer": {
+        	 	"@id": "Incident"
+        	 }
+        }
+	]
+	</script>
         
-    <div id="loadingContainer" style="display: none;">
-      <div id="loadingBackground">
-        <img id="loadingTathva" src="images/hacking1.jpg" style="margin-top: 234px; margin-left: 533px;">
-        <img id="loadingSun" src="tathva-sun.png" style="margin-top: 234px; margin-left: 723px; transform: rotate(20deg);">
-      </div>
+ 	 
+        <style>
+
+
+
+
+.head_font{
+	
+	font-family: arial;
+	font-size: 15px;
+	font-style: normal;
+	font-variant: normal;
+        color: #555;
+	font-weight: bold;
+}
+
+
+
+	</style>
+ 
+</head>
+<body>
+    
+<header>
+<!--div  id="navbar" class="second-section desk navbar-collapse navbar-right collapse hover-effect" style="background: white!important;"-->
+		<div class="page_links nav navbar-nav desk " style="border:0;background-color:black!important;">
+          <ul >
+              
+            
+            <li><a href="workshops.html" class="head_font hvr-wobble-skew"  style="color: white;">WORKSHOPS</a></li>
+            <li><a href="culturals.html" class="head_font hvr-wobble-skew" style="color: white;" >CULTURALS</a></li>
+            
+            <!--li class="mob_comp"><a><img  src="images/logo.ico" style="height: 60px;margin-top: -9px;width: auto;margin-left: -350px;"></a></li-->
+            <li><a href="gallery.html"   class="head_font hvr-wobble-skew" style="color: white;" >GALLERY</a></li>
+            <li ><a  href="sponsors.html" class="head_font hvr-wobble-skew" style="color: white;" >SPONSORS</a></li>
+            <li ><a  href="about.html" class="head_font hvr-wobble-skew" style="color: white;">ABOUT US</a></li>
+            <li ><a  href="sponsors.html" class="head_font hvr-wobble-skew" style="color: white;">LOGIN</a></li>
+           
+             
+            <!--li><button onclick="location.href = '#'"><a  href="#" class='name_to_appear'>Sign In/Sign Up</a></button></li-->
+          </ul>
+        </div> 
+	<!--/div-->
+	    <div id="mob_nav">
+            <a class="menuBtn">
+                <span class="lines"></span>
+            </a>
+            <nav class="mainMenu">
+                <ul>
+                    <li><a href="index.html"><img style="padding: 25px;width: 100%;" src="images/logo.ico"></a></li>
+                    <li><a href="workshops.html"  class="head_font hvr-wobble-skew">WORKSHOPS</a></li>
+                    <li><a href="events.html"  class="head_font hvr-wobble-skew">EVENTS</a></li>
+                    <li><a href="culturals.html"  class="head_font hvr-wobble-skew">CULTURALS</a></li>
+                    <li><a href="gallery.html"  class="head_font hvr-wobble-skew">GALLERY</a></li>
+                    <li><a href="sponsors.html"  class="head_font hvr-wobble-skew">SPONSORS</a></li>
+                    <li><a href="about.html"  class="head_font hvr-wobble-skew">ABOUT US</a></li>
+                    <li><button onclick="location.href = '#'"><a href="#" class='name_to_appear'>Sign In/Sign Up</a></button></li>
+                </ul>
+            </nav>
     </div>
+    
+    
+<script src="header_js/jquery.min.js"></script>
+<script src="header_js/script_name.js"></script>
 
-    <script src="event_js/jquery.dlmenu.js"></script>
-    <script src="event_js/components.js"></script>
-    <script src="event_js/loadingTathva.js"></script>
-    <script src="event_js/pagetransitions.js"></script>
-      
 
-</body></html>
+    <script>
+$(window).bind("load", function() {
+	 $('.menuBtn').click(function() {
+                $(this).toggleClass('act');
+                if($(this).hasClass('act')) {
+                    $('.mainMenu').addClass('act');
+                }
+                else {
+                    $('.mainMenu').removeClass('act');
+                }
+            });
+	$('.preload').delay(1000).fadeOut();
+	     $(".techkriti").animate({top: "30%"});
+  var canvas = document.getElementById('canvas')
+  var ctx = canvas.getContext('2d')
+  canvas.width = innerWidth
+  canvas.height = innerHeight
+
+  var party = smokemachine(ctx, [255, 255, 255])
+  party.start() // start animating
+
+  onmousemove = function (e) {
+    var x = e.clientX
+    var y = e.clientY
+    var n = .5
+                  console.log("width"+x);
+                 console.log("height"+y);
+    var t = Math.floor(Math.random() * 200) + 3800
+    //party.addsmoke(x, y, n, t)
+  }
+console.log('outerwidth'+outerWidth);
+  setInterval(function(){
+                
+    party.addsmoke(0, outerHeight, 5)
+  }, 300)
+         setInterval(function(){
+                
+    party.addsmoke(outerWidth, outerHeight, 5)
+  }, 300)
+    setInterval(function(){
+                
+    party.addsmoke(0, outerHeight/2, 3)
+  }, 300)
+   setInterval(function(){
+                
+    party.addsmoke(0, 0, 3)
+  }, 300)
+   setInterval(function(){
+                
+    party.addsmoke(outerWidth, outerHeight/2, 3)
+  }, 300)
+});
+</script>
+<script type="text/javascript">
+
+	function initAnimation(){
+		var panes = document.querySelectorAll('.pane');
+		for(var i=0; i<panes.length; i++){
+			var element = panes[i];
+			// console.log(element, element.childNodes);
+			handlePane(element);
+		}
+	}
+	function handlePane(element){
+		element.addEventListener('mousemove',function(event){
+			// console.log('on mousemove')
+			var mouseX = event.layerX;
+			var mouseY = event.layerY;
+			var elementH = element.scrollHeight;
+			var elementW = element.scrollWidth;
+			var maxRotationAngle = 12;
+			function getRotationAngle(cx,cy,x,y,ma){
+				return ma * Math.sqrt( ( (cx - x)*(cx - x) + (cy - y) * (cy - y) ) / (cx*cx+cy*cy) ) ;
+			}
+			var rotationAngle = getRotationAngle(elementW/2, elementH/2, mouseX, mouseY, maxRotationAngle);
+			var tr = '';
+
+			tr += 'transform:translateZ(10px) rotate3d(' + -1 * ( mouseY - (1.0*elementH/2) ) +',' + ( mouseX - (1.0*elementW/2) )  + ',0,' + rotationAngle + 'deg);';
+			
+			var transformation = tr; 
+			transformation += '-webkit-'+tr;
+			transformation += '-moz-'+tr;
+			transformation += '-ms-'+tr;
+			transformation += '-o-'+tr;
+
+			element.childNodes[1].setAttribute('style',transformation);
+			// element.childNodes.setAttribute({transform:transformation});
+		});
+		element.addEventListener('mouseleave',function(){
+			element.childNodes[1].setAttribute('style',"");
+		});
+	}
+	initAnimation();
+	$("#flexiselDemo3").flexisel({
+        visibleItems: 4,
+        itemsToScroll: 1,         
+        autoPlay: {
+            enable: true,
+            interval: 5000,
+            pauseOnHover: true
+        }        
+    });
+    
+</script>
+</header>
+
+
+	
+<main>
+<div class="side-bar">
+	<h2 style="font-family:BrushScriptMT,cursive;">Branches</h2>
+	<ul>
+		<li class="active" data-target="#music">
+			<span class="underline animate" style="font-family:BrushScriptMT,cursive;" >CSE</span>
+		</li>
+		<li data-target="#dance">
+			<span class="underline" style="font-family:BrushScriptMT,cursive;" >ECE</span>
+		</li>
+		<li data-target="#fine-arts">
+			<span class="underline" style="font-family:BrushScriptMT,cursive;">MECH</span>
+		</li>
+		<li data-target="#lit-events" style="font-family:BrushScriptMT,cursive;">
+			<span class="underline" >EEE</span>
+		</li>
+		<li data-target="#biz-events">
+			<span class="underline" style="font-family:BrushScriptMT,cursive;">CIV</span>
+		</li>
+		<li data-target="#gaming">
+			<span class="underline" style="font-family:BrushScriptMT,cursive;">CHEM</span>
+		</li>
+		
+		
+		
+	</ul>
+	<div class="scroll-bar"></div>
+</div>
+<div class="events">
+	<div class="event" id="music">
+		<img src="images/5_modify.gif" class="event-bg">
+		<h1 style="font-family:Harrington,fantasy;">CSE</h1>
+		 <div class="more-details w3ls-banner w3-agilefireworks">
+		 	<div class="left-half">
+		 		<ul>
+		 			<li class="sub-event" data-target="#bandish-desc">Code Relay</li>
+		 			<li class="sub-event" data-target="#dhwanik-desc">Blind Coding</li>
+		 			<li class="sub-event active" data-target="#pulse-desc">Data Addicts</li>
+		 			<li class="sub-event" data-target="#unplugged-desc">LAN Games</li>
+		 			<li class="sub-event" data-target="#raagalaya-desc">Fun event:StandUp Comedy</li>
+		 			
+		 		</ul>
+		 	</div>
+		 	<div class="right-half">
+		 		<div class="sub-event-desc" id="bandish-desc">
+		 			<p class="contact">Contact</p>
+		 			<h2>Code Relay<label>(Semi-Professional Eastern Rock Band Competition)</label></h2>
+			 		<p class="desc">
+			 			Thermal and Quarter. Raghu Dixit Project. Thaikkudam Bridge. Let it be remembered in the 
+			 			pages of history that nobody does rock better than our desi boyz! Adorn your heart with 
+			 			the tricolour at Bandish, the Eastern rock phenomenon. Because who says only the 
+			 			Westerners should have all the fun?
+			 		</p>
+			 		<div class="contact-desc">
+			 			<h3>Contact</h3>
+			 			<p>
+			 				Aeshwrya Panda<br/>
+			 				<a href="tel:+917411411260">+91 74114 11260</a>
+			 			</p>
+			 		</div>
+			 		<div>
+			 			<h3 class="prizes">Prizes worth 24K + Studio Deal</h3>
+				 		<a class="rules"  target="_blank" href="http://incident.co.in/files/rules/Bandish-Rules.pdf">Register</a>
+				 		<p class="date"><b>Date: </b>04/03/2017</p>
+			 		</div>
+			 		
+		 		</div>
+		 		<div class="sub-event-desc" id="dhwanik-desc">
+		 			<p class="contact">Contact</p>
+		 			<h2>Blind Coding <label>(Eastern Acoustic Band Competition)</label></h2>
+			 		<p class="desc">
+			 			This Incident, allow your soul to marvel at the wonders of Eastern music. Let the whimsical notes of the flute sweep you
+						off your feet. Let the cheeky twang of the sitar snap at the strings of your heart. Let the lively beat of the tabla incite fire
+						in your veins. Let Dhwanik, Incident's Eastern acoustic sensation, leave you craving more.ore.
+			 		</p>
+			 		<div class="contact-desc">
+			 			<h3>Contact</h3>
+			 			<p>
+			 				A F Leonard<br/>
+			 				<a href="tel:+918197859387">+91 81978 59387</a>
+			 			</p>
+			 		</div>
+			 		<div>
+				 		<h3 class="prizes">Prizes worth Rs. 20,000</h3>
+				 		<a class="rules"  target="_blank" href="http://incident.co.in/files/rules/Dhwanik-Rules.pdf">Register</a>
+				 		<p><b>Date: </b>03/03/2017</p>
+				 	</div>
+			 		
+		 		</div>
+		 		<div class="sub-event-desc active" id="pulse-desc">
+		 			<p class="contact">Contact</p>
+		 			<h2>Data Addicts <label>(Semi-Professional Western Rock Band Competition)</label></h2>
+			 		<p class="desc">
+			 			Have you ever dreamt of selling out Madison Square Garden? Ever wondered how it would feel to witness a full-house
+						crowd chant your name? Team Incident provides just the experience and invites you to rule the stage at Pulse, the
+						Western battle of bands. We promise you a crowd unlike anything you have ever seen and will ever see! What are you
+						waiting for? Register today!
+			 		</p>
+			 		<div class="contact-desc">
+			 			<h3>Contact</h3>
+			 			<p>
+			 				Akshay Laila<br/>
+			 				<a href="tel:+917760596626">+91 77605 96626</a>
+			 			</p>
+			 		</div>
+			 		<div>
+			 			<h3 class="prizes">Prizes worth 24K + Studio Deal</h3>
+				 		<a class="rules"  target="_blank" href="http://incident.co.in/files/rules/Pulse-Rules.pdf">Register</a>
+				 		<p><b>Date: </b>02/03/2017</p>
+			 		</div>
+			 		
+		 		</div>
+		 		<div class="sub-event-desc" id="unplugged-desc">
+		 			<p class="contact">Contact</p>
+		 			<h2>LAN Games <label>(Western Acoustic &amp; A cappella Band Competition)</label></h2>
+			 		<p class="desc">
+			 			A starry night. Gentle winds. A crackling bonfire. Waves on a beach. The strum of a guitar. Make music with your
+						mouth. Mix melodies with your mind. Enthral your senses and expand your horizons. Experience contentment and
+						enlightenment at Unplugged. Be it Western acoustic spectacle or an Acapella wonder, unplug your heart and let the
+						music take over!
+			 		</p>
+			 		<div class="contact-desc">
+			 			<h3>Contact</h3>
+			 			<p>
+			 				Anirudh Sriram<br/>
+			 				<a href="tel:+917022090091">+91 70220 90091</a>
+			 			</p>
+                                               
+			 		</div>
+			 		<div>
+			 			<h3 class="prizes">Prizes worth Rs. 20,000</h3>
+                                                <a class="rules"  target="_blank" href="http://incident.co.in/files/rules/Unplugged-Rules.pdf">Register</a>
+				 		<p><b>Date: </b>03/03/2017</p>
+			 		</div>
+			 		
+		 		</div>
+		 		<div class="sub-event-desc" id="raagalaya-desc">
+		 			<p class="contact">Contact</p>
+		 			<h2>Standup Comedy<label>(Solo Eastern Vocals Competition)</label></h2>
+			 		<p class="desc">
+			 			Ever dreamt of seeing your name among the upper echelons of maestros such as Mohd. Raffi, A.R. Rahman, Shankar
+						Mahadevan and the likes? Every prodigy started as a rookie. Team Incident invites all bathroom singers and maestros
+						to participate in Raagalaya, the Eastern solo competition..
+			 		</p>
+			 		<div class="contact-desc">
+			 			<h3>Contact</h3>
+			 			<p>
+			 				Niveditha Sai<br/>
+			 				<a href="tel:+919446978099">+91 94469 78098</a>
+			 			</p>
+			 		</div>
+			 		<div>
+			 			<h3 class="prizes">Prizes worth Rs. 8,000</h3>
+				 		<a class="rules"  target="_blank" href="http://incident.co.in/files/rules/Raagalaya-Rules.pdf">Register</a>
+				 		<p><b>Date: </b>04/03/2017</p>
+			 		</div>
+			 		
+		 		</div>
+		 		
+		 	</div>
+		 </div>
+	</div>
+    
+	<div class="event" id="dance">
+		<img src="images/5_modify.gif" class="event-bg">
+		<h1 style="font-family:Harrington,fantasy;">ECE</h1>
+		
+		 <div class="more-details">
+		 	<div class="left-half">
+		 		<ul>
+		 			
+                                        <li class="sub-event" data-target="#step-up-solo-desc">Debug Dunia</li>
+		 			<li class="sub-event" data-target="#step-up-duet-desc">Power Out</li>
+		 			<li class="sub-event active" data-target="#promenade-desc">E-Puppet Show</li>
+		 			<li class="sub-event" data-target="#thandav-desc">Think it</li>
+                                        <li class="sub-event" data-target="#codehunt">Code Hunt</li>
+                                        
+                                        
+		 	
+		 		</ul>
+		 	</div>
+		 	<div class="right-half">
+		 		<div class="sub-event-desc" id="step-up-solo-desc" style="height:auto;width:auto;">
+		 			<p class="contact">Contact</p>
+		 			<h2>Debug Dunia</h2>
+			 		<p class="desc">
+			 			Step up the volume, step up the beats, step up the electrifying mood, step up those dance moves. Incident gives you a 
+			 			chance to take your talent one step higher with Step Up, the solo dance contest. So are you geared up to step up?
+			 			 Gyrate with your moves and prove it then.
+			 		</p>
+			 		<div class="contact-desc">
+			 			<h3>Contact</h3>
+			 			<p>
+			 				Rohit Kumar<br/>
+			 				<a href="tel:+919972393575">+91 99723 93575</a>
+			 			</p>
+			 		</div>
+			 		<div>
+			 			<h3 class="prizes">Prizes worth Rs. 8,000</h3>
+				 		<a class="rules" target="_blank"  href="http://incident.co.in/files/rules/Step-Up-Solo-Rules.pdf">Register</a>
+				 		<p><b>Date: </b>04/03/2017</p>
+			 		</div>
+			 		
+		 		</div>
+		 		<div class="sub-event-desc" id="step-up-duet-desc">
+		 			<p class="contact">Contact</p>
+		 			<h2>Power Out/Witricity</h2>
+			 		<p class="desc">
+			 			What’s better than watching a live story, enacted by two people, shaping up with that eye catching choreography? Let the two 
+			 			speak with their moves as Incident presents to you the duet version of Step Up where you step up the level with double the talent.
+			 			 So let the double magic come across! 
+			 		</p>
+			 		<div class="contact-desc">
+			 			<h3>Contact</h3>
+			 			<p>
+			 				Abhilasha Jagadeesh<br/>
+			 				<a href="tel:+918762126955">+91 87621 26955</a>
+			 			</p>
+			 		</div>
+			 		<div>
+			 			<h3 class="prizes">Prizes worth Rs. 12,000</h3>
+				 		<a class="rules" target="_blank"  href="http://incident.co.in/files/rules/Step-Up-Duet-Rules.pdf">Register</a>
+				 		<p><b>Date: </b>04/03/2017</p>
+			 		</div>
+			 		
+		 		</div>
+		 		<div class="sub-event-desc active" id="promenade-desc">
+		 			<p class="contact">Contact</p>
+		 			<h2>E-puppet Show<label>(Semi-professional Western Group Dance Competition)</label></h2>
+			 		<p class="desc">
+			 			A leisurely stroll would seem so relieving, but what if you get to see your favourite dance moves creating it’s
+			 			 magic outside the dance floor? Presenting to you, the group Street dance competition, Promenade. So does your group 
+			 			 have it to turn eyes around and make it an amazing dance Promenade? Join in and find out yourself. 
+			 		</p>
+			 		<div class="contact-desc">
+			 			<h3>Contact</h3>
+			 			<p>
+			 				Akshay Laila<br/>
+			 				<a href="tel:+917760596626">+91 77605 96626</a>
+			 			</p>
+			 		</div>
+			 		<div>
+			 			<h3 class="prizes">Prizes worth Rs. 48,000</h3>
+				 		<a class="rules" target="_blank"  href="http://incident.co.in/files/rules/Promenade-Rules.pdf">Register</a>
+				 		<p><b>Date: </b>04/03/2017</p>
+			 		</div>
+			 		
+		 		</div>
+		 		<div class="sub-event-desc" id="thandav-desc">
+		 			<p class="contact">Contact</p>
+		 			<h2>Think it <label>(Semi-professional Eastern and Contemporary Group Dance Competition)</label></h2>
+			 		<p class="desc">
+			 			Diversity defines India. So get ready to define this with your dancing talent as we present to you the classical 
+			 			Indian dance competition, Tandav. Come, unite the East, West, North and the South on one stage with that stupendous
+			 			 choreography and blend these Indian dance forms up into a wonderful story for the world to witness. So can you blend 
+			 			 the mixes well? 
+			 		</p>
+			 		<div class="contact-desc">
+			 			<h3>Contact</h3>
+			 			<p>
+			 				Gopika Mohandas<br/>
+			 				<a href="tel:+918281985860">+91 82819 85860</a>
+			 			</p>
+			 		</div>
+			 		<div>
+			 			<h3 class="prizes">Prizes worth Rs. 48,000</h3>
+				 		<a class="rules" target="_blank"  href="http://incident.co.in/files/rules/Tandav-Rules.pdf">Register</a>
+				 		<p><b>Date: </b>05/03/2017</p>
+			 		</div>
+			 		
+		 		</div>
+                            <div class="sub-event-desc" id="thandav-desc">
+		 			<p class="contact">Contact</p>
+		 			<h2>Think it <label>(Semi-professional Eastern and Contemporary Group Dance Competition)</label></h2>
+			 		<p class="desc">
+			 			Diversity defines India. So get ready to define this with your dancing talent as we present to you the classical 
+			 			Indian dance competition, Tandav. Come, unite the East, West, North and the South on one stage with that stupendous
+			 			 choreography and blend these Indian dance forms up into a wonderful story for the world to witness. So can you blend 
+			 			 the mixes well? 
+			 		</p>
+			 		<div class="contact-desc">
+			 			<h3>Contact</h3>
+			 			<p>
+			 				Gopika Mohandas<br/>
+			 				<a href="tel:+918281985860">+91 82819 85860</a>
+			 			</p>
+			 		</div>
+			 		<div>
+			 			<h3 class="prizes">Prizes worth Rs. 48,000</h3>
+				 		<a class="rules" target="_blank"  href="http://incident.co.in/files/rules/Tandav-Rules.pdf">Register</a>
+				 		<p><b>Date: </b>05/03/2017</p>
+			 		</div>
+			 		
+		 		</div>
+                            <div class="sub-event-desc" id="codehunt">
+		 			<p class="contact">Contact</p>
+		 			<h2>Code Hunt <label>(Semi-professional Eastern and Contemporary Group Dance Competition)</label></h2>
+			 		<p class="desc">
+			 			Diversity defines India. So get ready to define this with your dancing talent as we present to you the classical 
+			 			Indian dance competition, Tandav. Come, unite the East, West, North and the South on one stage with that stupendous
+			 			 choreography and blend these Indian dance forms up into a wonderful story for the world to witness. So can you blend 
+			 			 the mixes well? 
+			 		</p>
+			 		<div class="contact-desc">
+			 			<h3>Contact</h3>
+			 			<p>
+			 				Gopika Mohandas<br/>
+			 				<a href="tel:+918281985860">+91 82819 85860</a>
+			 			</p>
+			 		</div>
+			 		<div>
+			 			<h3 class="prizes">Prizes worth Rs. 48,000</h3>
+				 		<a class="rules" target="_blank"  href="http://incident.co.in/files/rules/Tandav-Rules.pdf">Register</a>
+				 		<p><b>Date: </b>05/03/2017</p>
+			 		</div>
+			 		
+		 		</div>
+		
+		 	</div>
+		 </div>
+	</div>
+	<div class="event" id="fine-arts">
+            <img src="images/5_modify.gif" class="event-bg">
+		<h1 style="font-family:Harrington,fantasy;">MECH</h1>
+		 <div class="more-details">
+		 	<div class="left-half">
+		 		<ul>
+		 			<li class="sub-event active" data-target="#body-art-desc">Extreme Racing</li>
+		 			<li class="sub-event" data-target="#jahaaz">Jahaaz</li>
+                                        <li class="sub-event" data-target="#impulse">Impulse 2.0</li>
+		 			<li class="sub-event" data-target="#mozobein">Mozobein</li>
+                                        <li class="sub-event" data-target="#dragrace">Drag Race</li>
+		 			<li class="sub-event" data-target="#pick">Pick N place</li>
+                                        <li class="sub-event" data-target="#oddrace">odd Race</li>
+		 			<li class="sub-event" data-target="#soccer">Soccer League Robotica</li>
+		 		
+		 		</ul>
+		 	</div>
+		 	<div class="right-half">
+		 		<div class="sub-event-desc active" id="body-art-desc">
+		 			<p class="contact">Contact</p>
+		 			<h2>Extreme Racing</h2>
+			 		<p class="desc">
+			 			Get ready to turn your partners into canvas and show case your expertise by painting them into realistic illustrations based
+			 			on a spot theme!
+			 		</p>
+			 		<div class="contact-desc">
+			 			<h3>Contact</h3>
+			 			<p>
+			 				Navita Singhal<br/>
+			 				<a href="tel:+919481655181">+91 94816 55181</a>
+			 			</p>
+			 		</div>
+			 		<div>
+			 			<h3 class="prizes">Prizes worth Rs. 3,000</h3>
+				 		<a class="rules" target="_blank"  href="http://incident.co.in/files/rules/Body-Art-Rules.pdf">Register</a>
+				 		<p><b>Date: </b>02/03/2017</p>
+			 		</div>
+			 		
+		 		</div>
+                            <div class="sub-event-desc" id="jahaaz">
+                                    <p class="contact">Contact</p>
+		 			<h2>Jahaaz</h2>
+			 		<p class="desc">
+			 			Can you conjure up words and sentences under tremendous pressure, outwit your opponents and build an argument from absolutely 
+			 			nothing? It's time to show your mettle, with quick fire thinking and lightning fast reflexes. Don’t lose out on a chance to rise 
+			 			to fame in 60 seconds. You might just live the best minute of your life at Just-A-Minute.
+			 		</p>
+                                        <div class="contact-desc">
+			 			<h3>Contact</h3>
+			 			<p>
+			 				Vishakha<br/>
+			 				<a href="tel:+918722120531">+91 87221 20531</a>
+			 			</p>
+			 		</div>
+			 		<div>
+			 							 		<a class="rules" target="_blank"  href="http://incident.co.in/files/rules/Newspaper-Costume-Design-Rules.pdf">Register</a>
+				 		<p><b>Date: </b>03/03/2017</p>
+			 		</div>
+			 		
+			 		
+		 		</div>
+		 	
+		 	
+                     <div class="sub-event-desc" id="impulse">
+		 			<p class="contact">Contact</p>
+		 			<h2>Impulse 2.0</h2>
+			 		<p class="desc">
+			 			Do you think you have the knack of fashion designing? Then take this challenge of styling your partner by remodeling
+			 			newspaper into iconic party wear and watch the newspaper clad  mannequins walk the ram.
+			 		</p>
+			 		<div class="contact-desc">
+			 			<h3>Contact</h3>
+			 			<p>
+			 				Vishakha<br/>
+			 				<a href="tel:+918722120531">+91 87221 20531</a>
+			 			</p>
+			 		</div>
+			 		<div>
+			 			<h3 class="prizes">Prizes worth Rs. 3,000</h3>
+				 		<a class="rules" target="_blank"  href="http://incident.co.in/files/rules/Newspaper-Costume-Design-Rules.pdf">Register</a>
+				 		<p><b>Date: </b>03/03/2017</p>
+			 		</div>
+			 		
+		 		</div>
+		 	
+                <div class="sub-event-desc" id="mozobein">
+		 			<p class="contact">Contact</p>
+		 			<h2>Mozobein</h2>
+			 		<p class="desc">
+			 			Do you think you have the knack of fashion designing? Then take this challenge of styling your partner by remodeling
+			 			newspaper into iconic party wear and watch the newspaper clad  mannequins walk the ram.
+			 		</p>
+			 		<div class="contact-desc">
+			 			<h3>Contact</h3>
+			 			<p>
+			 				Vishakha<br/>
+			 				<a href="tel:+918722120531">+91 87221 20531</a>
+			 			</p>
+			 		</div>
+			 		<div>
+			 			<h3 class="prizes">Prizes worth Rs. 3,000</h3>
+				 		<a class="rules" target="_blank"  href="http://incident.co.in/files/rules/Newspaper-Costume-Design-Rules.pdf">Register</a>
+				 		<p><b>Date: </b>03/03/2017</p>
+			 		</div>
+			 		
+                </div>
+    <div class="sub-event-desc" id="dragrace">
+		 			<p class="contact">Contact</p>
+		 			<h2>Drag Race</h2>
+			 		<p class="desc">
+			 			Do you think you have the knack of fashion designing? Then take this challenge of styling your partner by remodeling
+			 			newspaper into iconic party wear and watch the newspaper clad  mannequins walk the ram.
+			 		</p>
+			 		<div class="contact-desc">
+			 			<h3>Contact</h3>
+			 			<p>
+			 				Vishakha<br/>
+			 				<a href="tel:+918722120531">+91 87221 20531</a>
+			 			</p>
+			 		</div>
+			 		<div>
+			 			<h3 class="prizes">Prizes worth Rs. 3,000</h3>
+				 		<a class="rules" target="_blank"  href="http://incident.co.in/files/rules/Newspaper-Costume-Design-Rules.pdf">Register</a>
+				 		<p><b>Date: </b>03/03/2017</p>
+			 		</div>
+			 		
+		 		</div>
+    <div class="sub-event-desc" id="pick">
+		 			<p class="contact">Contact</p>
+		 			<h2>Pick N Place</h2>
+			 		<p class="desc">
+			 			Do you think you have the knack of fashion designing? Then take this challenge of styling your partner by remodeling
+			 			newspaper into iconic party wear and watch the newspaper clad  mannequins walk the ram.
+			 		</p>
+			 		<div class="contact-desc">
+			 			<h3>Contact</h3>
+			 			<p>
+			 				Vishakha<br/>
+			 				<a href="tel:+918722120531">+91 87221 20531</a>
+			 			</p>
+			 		</div>
+			 		<div>
+			 			<h3 class="prizes">Prizes worth Rs. 3,000</h3>
+				 		<a class="rules" target="_blank"  href="http://incident.co.in/files/rules/Newspaper-Costume-Design-Rules.pdf">Register</a>
+				 		<p><b>Date: </b>03/03/2017</p>
+			 		</div>
+			 		
+		 		</div>
+		
+                        <div class="sub-event-desc" id="oddrace">
+		 			<p class="contact">Contact</p>
+		 			<h2>Odd Race</h2>
+			 		<p class="desc">
+			 			Do you think you have the knack of fashion designing? Then take this challenge of styling your partner by remodeling
+			 			newspaper into iconic party wear and watch the newspaper clad  mannequins walk the ram.
+			 		</p>
+			 		<div class="contact-desc">
+			 			<h3>Contact</h3>
+			 			<p>
+			 				Vishakha<br/>
+			 				<a href="tel:+918722120531">+91 87221 20531</a>
+			 			</p>
+			 		</div>
+			 		<div>
+			 			<h3 class="prizes">Prizes worth Rs. 3,000</h3>
+				 		<a class="rules" target="_blank"  href="http://incident.co.in/files/rules/Newspaper-Costume-Design-Rules.pdf">Register</a>
+				 		<p><b>Date: </b>03/03/2017</p>
+			 		</div>
+			 				 		</div>
+		
+		 <div class="sub-event-desc" id="soccer">
+		 			<p class="contact">Contact</p>
+		 			<h2>Soccer League Robotica</h2>
+			 		<p class="desc">
+			 			Do you think you have the knack of fashion designing? Then take this challenge of styling your partner by remodeling
+			 			newspaper into iconic party wear and watch the newspaper clad  mannequins walk the ram.
+			 		</p>
+			 		<div class="contact-desc">
+			 			<h3>Contact</h3>
+			 			<p>
+			 				Vishakha<br/>
+			 				<a href="tel:+918722120531">+91 87221 20531</a>
+			 			</p>
+			 		</div>
+			 		<div>
+			 			<h3 class="prizes">Prizes worth Rs. 3,000</h3>
+				 		<a class="rules" target="_blank"  href="http://incident.co.in/files/rules/Newspaper-Costume-Design-Rules.pdf">Register</a>
+				 		<p><b>Date: </b>03/03/2017</p>
+			 		</div>
+			 		
+                 </div>
+                        </div>
+                 </div>
+        </div>
+	<div class="event" id="lit-events">
+            <img src="images/5_modify.gif" class="event-bg">
+		<h1 style="font-family:Harrington,fantasy;">EEE</h1>
+		 <div class="more-details">
+		 	<div class="left-half">
+		 		<ul>
+		 			<li class="sub-event active" data-target="#jam-desc">Makeathon</li>
+		 			<li class="sub-event" data-target="#general-quiz-desc">Innovate</li>
+		 			<li class="sub-event" data-target="#india-quiz-desc">Exhibit</li>
+		 			<li class="sub-event" data-target="#sports-entertainment-quiz-desc">Jugat</li>
+		 			
+		 		</ul>
+		 	</div>
+		 	<div class="right-half">
+		 		<div class="sub-event-desc active" id="jam-desc">
+                                    <p class="contact">Contact</p>
+		 			<h2>Makeathon</h2>
+			 		<p class="desc">
+			 			Can you conjure up words and sentences under tremendous pressure, outwit your opponents and build an argument from absolutely 
+			 			nothing? It's time to show your mettle, with quick fire thinking and lightning fast reflexes. Don’t lose out on a chance to rise 
+			 			to fame in 60 seconds. You might just live the best minute of your life at Just-A-Minute.
+			 		</p>
+                                        <div class="contact-desc">
+			 			<h3>Contact</h3>
+			 			<p>
+			 				Vishakha<br/>
+			 				<a href="tel:+918722120531">+91 87221 20531</a>
+			 			</p>
+			 		</div>
+			 		<div>
+			 							 		<a class="rules" target="_blank"  href="http://incident.co.in/files/rules/Newspaper-Costume-Design-Rules.pdf">Register</a>
+				 		<p><b>Date: </b>03/03/2017</p>
+			 		</div>
+			 		
+			 		
+		 		</div>
+		 		<div class="sub-event-desc" id="general-quiz-desc">
+                                      <p class="contact">Contact</p>
+		 			<h2>Innovate</h2>
+			 		<p class="desc">
+			 			The enthusiastic applause from a roaring crowd, the buzzing of the electrified 
+			 			air of suspense and the almost audible focus of the quizzers rapt on their feet.
+			 			 Questions fired and answers spat back with equal zeal.This is the battlefield 
+			 			 where only knowledge reigns supreme. Charge those neurons and see if your team
+			 			  has got what it takes to win the general quiz.Conducted by Lord Arul Mani 
+			 			  himself, this is a quiz you definitely cannot afford to miss.
+
+			 		</p>
+                                         <div class="contact-desc">
+			 			<h3>Contact</h3>
+			 			<p>
+			 				Vishakha<br/>
+			 				<a href="tel:+918722120531">+91 87221 20531</a>
+			 			</p>
+			 		</div>
+			 		<div>
+			 							 		<a class="rules" target="_blank"  href="http://incident.co.in/files/rules/Newspaper-Costume-Design-Rules.pdf">Register</a>
+				 		<p><b>Date: </b>03/03/2017</p>
+			 		</div>
+			 		
+			 		
+		 		</div>
+		 		<div class="sub-event-desc" id="india-quiz-desc">
+                                      <p class="contact">Contact</p>
+		 			<h2>Exhibit</h2>
+			 		<p class="desc">
+			 			If you are confident with your trivia about India,this is your chance.If competition 
+			 			comes naturally to you,if your brain is dying for some activity and if you see thrill
+			 			 in do-or-die situations,we invite you to take part in the ultimate brain storming session.
+			 			 Watch while teams battle it out on the stage as answers fly back and forth with equal 
+			 			 aplomb.Conducted by Arul Mani this is a quiz you definitely cannot afford to miss.
+			 		</p>
+			 		 <div class="contact-desc">
+			 			<h3>Contact</h3>
+			 			<p>
+			 				Vishakha<br/>
+			 				<a href="tel:+918722120531">+91 87221 20531</a>
+			 			</p>
+			 		</div>
+			 		<div>
+			 							 		<a class="rules" target="_blank"  href="http://incident.co.in/files/rules/Newspaper-Costume-Design-Rules.pdf">Register</a>
+				 		<p><b>Date: </b>03/03/2017</p>
+			 		</div>
+			 				 		</div>
+		 		<div class="sub-event-desc" id="sports-entertainment-quiz-desc">
+                                      <p class="contact">Contact</p>
+		 			<h2>Jugat</h2>
+			 		<p class="desc">
+			 			Can't contain yourself with your knowledge of sports and entertainment? Come and 
+			 			show all your craziness about sports and justify your love for entertainment in 
+			 			one of Incident's most popular quizzes.Do you have the mettle do battle it out at 
+			 			the quiz-essential zone of Incident 2017?
+			 		</p>
+			 		 <div class="contact-desc">
+			 			<h3>Contact</h3>
+			 			<p>
+			 				Vishakha<br/>
+			 				<a href="tel:+918722120531">+91 87221 20531</a>
+			 			</p>
+			 		</div>
+			 		<div>
+			 							 		<a class="rules" target="_blank"  href="http://incident.co.in/files/rules/Newspaper-Costume-Design-Rules.pdf">Register</a>
+				 		<p><b>Date: </b>03/03/2017</p>
+			 		</div>
+			 				 		</div>
+		 		<div class="sub-event-desc" id="lone-wolf-quiz-desc">
+                                      <p class="contact">Contact</p>
+		 			<h2>Lone Wolf Quiz</h2>
+			 		<p class="desc">
+			 			Do you know everything from the fun facts about infinity war to the intricacies
+			 			 of global economics?Are you generally shunned among your peers from being a know 
+			 			 it all?(OR does information unintentionally come out blurting whenever you open
+			 			  your mouth?) Well here you can actually win prizes for that! So come and
+			 			   embrace the chance to show the ignoramuses that inofrmation is the real wealth!
+			 		</p>
+			 		 <div class="contact-desc">
+			 			<h3>Contact</h3>
+			 			<p>
+			 				Vishakha<br/>
+			 				<a href="tel:+918722120531">+91 87221 20531</a>
+			 			</p>
+			 		</div>
+			 		<div>
+			 							 		<a class="rules" target="_blank"  href="http://incident.co.in/files/rules/Newspaper-Costume-Design-Rules.pdf">Register</a>
+				 		<p><b>Date: </b>03/03/2017</p>
+			 		</div>
+			 				 		</div>
+		 	</div>
+		 </div>
+	</div>
+	<div class="event" id="biz-events">
+            <img src="images/5_modify.gif" class="event-bg">
+		<h1 style="font-family:Harrington,fantasy;">Civil</h1>
+		 <div class="more-details">
+		 	<div class="left-half">
+		 		<ul>
+		 			<li class="sub-event active" data-target="#mock-stock-desc">Nerds Nest</li>
+		 			<li class="sub-event" data-target="#lobbying-desc">Clash of Cubes</li>
+		 			<li class="sub-event" data-target="#biz-quiz-desc">Hunters Saga</li>
+                                        <li class="sub-event" data-target="#maze">Maze Runnerst</li>
+		 			<li class="sub-event" data-target="#bob">Bob the Builder</li>
+		 			<li class="sub-event" data-target="#smart">Smart City Challenge </li>
+        
+		 		</ul>
+		 	</div>
+		 	<div class="right-half">
+		 		<div class="sub-event-desc active" id="mock-stock-desc">
+                                      <p class="contact">Contact</p>
+		 			<h2>Nerds Nest</h2>
+			 		<p class="desc">
+			 			Want to experience the excitement of making money on the stock market? Have never known what a share is and have only wondered 
+			 			how everybody buys shares and makes riches? Join the Mock Stock event of Incident ’17. You can play against the smartest of 
+			 			investors and make millions. So this Inci, trade your stocks right away and be a millionaire!
+			 		</p>
+                                        <a class="rules"  target="_blank" href="http://incident.co.in/files/rules/Pulse-Rules.pdf">Register</a>
+			 		
+		 		</div>
+		 		<div class="sub-event-desc" id="lobbying-desc">
+                                      <p class="contact">Contact</p>
+		 			<h2>Clash of Cubes</h2>
+			 		<p class="desc">
+			 		Ever wondered how to do the act of attempting to influence the actions, policies, or decisions of officials in a government?
+			 		Become a professional lobbyist this Inci! Why wait? Structure your thoughts &amp; influence the Government!
+			 		</p>
+                                         <div class="contact-desc">
+			 			<h3>Contact</h3>
+			 			<p>
+			 				Vishakha<br/>
+			 				<a href="tel:+918722120531">+91 87221 20531</a>
+			 			</p>
+			 		</div>
+			 		<div>
+			 							 		<a class="rules" target="_blank"  href="http://incident.co.in/files/rules/Newspaper-Costume-Design-Rules.pdf">Register</a>
+				 		<p><b>Date: </b>03/03/2017</p>
+			 		</div>
+		 		</div>
+		 		<div class="sub-event-desc" id="biz-quiz-desc">
+                                      <p class="contact">Contact</p>
+		 			<h2>Hunters Saga</h2>
+			 		<p class="desc">
+			 			Do people often claim that you are such a know-all? Well then, prove them right. Inci BizQuiz tries to bring out your 
+			 			knowledge treasure trove. Compete with the sharpest and fastest minds with a passion for the business world. Do you have 
+			 			the mettle to battle it out at the quiz-essential zone of Incident '17?
+			 		</p>
+                                        <a class="rules"  target="_blank" href="http://incident.co.in/files/rules/Pulse-Rules.pdf">Register</a>
+			 		
+		 		</div>
+                            <div class="sub-event-desc" id="maze">
+                                  <p class="contact">Contact</p>
+		 			<h2>Maze Runners</h2>
+			 		<p class="desc">
+			 			Do people often claim that you are such a know-all? Well then, prove them right. Inci BizQuiz tries to bring out your 
+			 			knowledge treasure trove. Compete with the sharpest and fastest minds with a passion for the business world. Do you have 
+			 			the mettle to battle it out at the quiz-essential zone of Incident '17?
+			 		</p>
+                                         <div class="contact-desc">
+			 			<h3>Contact</h3>
+			 			<p>
+			 				Vishakha<br/>
+			 				<a href="tel:+918722120531">+91 87221 20531</a>
+			 			</p>
+			 		</div>
+			 		<div>
+			 							 		<a class="rules" target="_blank"  href="http://incident.co.in/files/rules/Newspaper-Costume-Design-Rules.pdf">Register</a>
+				 		<p><b>Date: </b>03/03/2017</p>
+			 		</div>
+		 		</div>
+                            <div class="sub-event-desc" id="bob">
+		 			<h2>Bob the Builder</h2>
+			 		<p class="desc">
+			 			Do people often claim that you are such a know-all? Well then, prove them right. Inci BizQuiz tries to bring out your 
+			 			knowledge treasure trove. Compete with the sharpest and fastest minds with a passion for the business world. Do you have 
+			 			the mettle to battle it out at the quiz-essential zone of Incident '17?
+			 		</p>
+                                        <a class="rules"  target="_blank" href="http://incident.co.in/files/rules/Pulse-Rules.pdf">Register</a>
+			 		
+		 		</div>
+                            <div class="sub-event-desc" id="smart">
+		 			<h2>Smart City Challenge</h2>
+			 		<p class="desc">
+			 			Do people often claim that you are such a know-all? Well then, prove them right. Inci BizQuiz tries to bring out your 
+			 			knowledge treasure trove. Compete with the sharpest and fastest minds with a passion for the business world. Do you have 
+			 			the mettle to battle it out at the quiz-essential zone of Incident '17?
+			 		</p>
+			 		 <div class="contact-desc">
+			 			<h3>Contact</h3>
+			 			<p>
+			 				Vishakha<br/>
+			 				<a href="tel:+918722120531">+91 87221 20531</a>
+			 			</p>
+			 		</div>
+			 		<div>
+			 							 		<a class="rules" target="_blank"  href="http://incident.co.in/files/rules/Newspaper-Costume-Design-Rules.pdf">Register</a>
+				 		<p><b>Date: </b>03/03/2017</p>
+			 		</div>
+                            </div>
+                            
+		 	</div>
+		 </div>
+	</div>
+    
+	<div class="event" id="gaming">
+            <img src="images/5_modify.gif" class="event-bg">
+		<h1 style="font-family:Harrington,fantasy;">Chem</h1>
+		
+		 <div class="more-details">
+		 	<div class="left-half">
+		 		<ul>
+		 			<li class="sub-event active" data-target="#nfs-desc">Oral Presentations</li>
+		 			<li class="sub-event" data-target="#fifa-desc">Brain Stroming</li>
+		 			
+		 		</ul>
+		 	</div>
+                     	
+                     <div class="right-half">
+                            
+		 		<div class="sub-event-desc active" id="nfs-desc">
+                                    <p class="contact">Contact</p>
+		 			<h2>Oral Presentations</h2>
+			 		<p class="desc">
+			 			Speed has never killed anyone, suddenly becoming stationary is what gets you. So keep your acceleration high, cause racers
+			 			should race and cops should eat donuts, as NFS brings you the adrenaline rush this Incident 17.
+					</p>
+		 		 <div class="contact-desc">
+			 			<h3>Contact</h3>
+			 			<p>
+			 				Vishakha<br/>
+			 				<a href="tel:+918722120531">+91 87221 20531</a>
+			 			</p>
+			 		</div>
+                                        <div>
+                                            <a class="rules" target="_blank"  href="http://incident.co.in/files/rules/Newspaper-Costume-Design-Rules.pdf">Register</a>
+				 		<p><b>Date: </b>03/03/2017</p>
+			 		</div>      
+		 		</div>
+		 		<div class="sub-event-desc" id="fifa-desc">
+                                      <p class="contact">Contact</p>
+		 			<h2>Brain Stroming</h2>
+			 		<p class="desc">
+			 		Dribble, scissor, a quick pull and push, as you send the defenders sprawling across the grass, causing the goalkeeper to break out
+			 		in panicky sweat, with the frenzied fans bordering on the state of hysterical joy. Welcome to the world of FIFA, where every move
+			 		is magic per se.
+			 		</p>
+			 		 <div class="contact-desc">
+			 			<h3>Contact</h3>
+			 			<p>
+			 				Vishakha<br/>
+			 				<a href="tel:+918722120531">+91 87221 20531</a>
+			 			</p>
+			 		</div>
+			 		<div>
+			 							 		<a class="rules" target="_blank"  href="http://incident.co.in/files/rules/Newspaper-Costume-Design-Rules.pdf">Register</a>
+				 		<p><b>Date: </b>03/03/2017</p>
+			 		</div></div>
+		 		
+		 	</div>
+		 </div>
+	</div>
+	
+	</div>
+	
+		 	
+
+</main>
+     
+    
+</body>
+</html>
